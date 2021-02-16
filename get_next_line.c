@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-garr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ade-garr <ade-garr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 13:48:06 by ade-garr          #+#    #+#             */
-/*   Updated: 2020/01/06 12:12:25 by ade-garr         ###   ########.fr       */
+/*   Updated: 2021/02/16 10:43:49 by ade-garr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_join(char *line, char *left)
 
 	i = 0;
 	j = 0;
-	if (!(dup = malloc(sizeof(char) * (ft_strlen(line) + ft_strlen(left) + 1))))
+	if (!(dup = malloc(sizeof(char) * (ft_strlen_gnl(line) + ft_strlen_gnl(left) + 1))))
 		return (NULL);
 	while (line != NULL && line[i] != '\0')
 	{
